@@ -5,11 +5,11 @@
 char key();
 void main()
 {
-DDRA=0b00000000;
-DDRD=0b00001111;
-DDRB=0b11111111;
-PORTA=0b00001111;
-DDRC=0b11111111;
+DDRA=0x00;
+DDRD=0x0f;
+DDRB=0xff;
+PORTA=0x0f;
+DDRC=0xff;
 lcd_init();
 int x=0;
 int a=0;
